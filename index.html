@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main"> 
+        <div class="mainbody">
+    <h2>Student Management CRUD</h2>
+        <form method="post" id="form">
+            <div class="inputfield">
+            <input id="name" name="name" placeholder="  Name" required>
+            <input id="email" name="Email" placeholder="  Email" required>
+            <input id="Gpa" name="Gpa" placeholder="  Gpa" required>
+            <input id="Age" name="Age" placeholder="  Age" required>
+            <input id="Degree" name="Degree" placeholder="  Degree" required></div>
+            <input type="submit"  id="submit" value="Add Student" required>                
+        </form>
+      
+      <!--search bar-->
+        <input type="search" id="search" placeholder=" press enter to Search By Name,email or degree" onsearch="search()">
+          <!--display data-->
+        <div class="studata">
+            <table id="showdata"><thead>
+                <tr>
+                     <th>ID</th> 
+                     <th>Student Name</th>
+                     <th>Email</th>
+                     <th>Age</th>
+                     <th>GPA</th>
+                     <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody id="adddata"> 
+                  <!--add data using js-->
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="degree"></td>
+            </tfoot>
+    </table></div>
+    </div>
+</div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <h1>Student Management CRUD</h1>
+        <form action="post" id="form">
+            <div class="input-container">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="email" placeholder="Email" id="email"required>
+                <input type="number" placeholder="GPA" id="gpa" required>
+                <input type="number" placeholder="Age" id="age" required>
+                <input type="text" placeholder="Degree" id="degree" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Add Student" id="submit">
+            </div>
+        </form>
+        <div class="search-container">
+            <input type="text" placeholder="Search By Name, email or degree" id="search-bar">
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <th style="width: 10%;">ID</th>
+                    <th style="width: 25%;">Student Name</th>
+                    <th style="width: 25%;">Email</th>
+                    <th style="width: 10%;">Age</th>
+                    <th style="width: 10%;">GPA</th>
+                    <th>Degree</th>
+                </thead>
+                <tbody class="add-conatiner">
+                </tbody>
+            </table>
+        </div>
+    </main> 
+    <script src="./script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html> -->
